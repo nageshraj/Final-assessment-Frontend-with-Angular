@@ -14,6 +14,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { RegisterUserComponent } from './components/register-user/register-user.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ProductsByTypeComponent } from './components/products-by-type/products-by-type.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductsComponent } from './components/products/products.component';
     NavigationComponent,
     RegisterUserComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductsByTypeComponent
   ],
   imports: [
     BrowserModule,

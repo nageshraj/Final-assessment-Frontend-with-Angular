@@ -3,14 +3,14 @@ ul {
     margin: -18px;
     padding: 0;
     overflow: hidden;
-    background-color: #12232E;
+    background-color: #FB5D26;
 }
 
 li {
     float: left;
 }
 
-li a, form{
+li a{
     display: block;
     color: white;
     text-align: center;
@@ -19,15 +19,11 @@ li a, form{
 }
 
 li a:hover:not(.active) {
-    background-color: #12232E;
+    background-color: #050505;
 }
 
 .active {
-    background-color: #FAED26;
-}
-
-form{
-    text-align: right;
+    background-color: #24188A;
 }
 
 
@@ -35,13 +31,26 @@ form{
 input[type=text]{
 
 	height: 20px;
-    width: 400px;
+    width: 600px;
 }
 
 button{
     height: 28px;
     width: 50px;
-    background-color: #FAED26;
+    background-color: #24188A;
 
 
+}
+
+form{
+    float: left;
+}
+
+form > input[type=text]{
+    margin-top: 11px;
+    height: 28px;
+}  
+
+img{
+    height: 40px;
 }

@@ -3,7 +3,7 @@ form{
 }
 
 input[type=submit]{
-	background-color: #FAED26;
+	background-color: #24188A;
 	border: 1px;
 	text-decoration: none;
 	color: white;
@@ -13,7 +13,7 @@ input[type=submit]{
 }
 
 input[type=text],input[type=password],input[type=date]{
-    border: 2px solid #FAED26;
+    border: 2px solid #24188A;
     border-radius: 4px;
     
 
@@ -25,7 +25,7 @@ margin: 3px 0;
 }
 
 div {
-    color: #FAED26;
+    color: #24188A;
 }
 
 label{
@@ -33,7 +33,7 @@ label{
 }
 
 img{
-    height: 400px;
+    height: 500px;
     width: 500px;
     float: right;
 }

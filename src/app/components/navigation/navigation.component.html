@@ -1,16 +1,19 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="topnav">
+<div class="topnav"> 
 <nav >
     <ul>
-      <li><a routerLink="/allProducts" routerLinkActive="active">ALL PRODUCTS</a></li>
-      <li><a routerLink="/simpleInterest" routerLinkActive="active">SIMPLE INTEREST</a></li>
-     <li> <form action="/action_page.php">
-        <input type="text" placeholder="Enter product name:" name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <li><img src="assets/thestore.png"></li>
+      <li style="float: right;"><a routerLink="/allProducts" routerLinkActive="active">ALL PRODUCTS   </a></li>
+      <li style="float: right;"><a routerLink="/allProductsByType" routerLinkActive="active">SEARCH   </a></li>
+
+     <!-- <li > <form #search (ngSubmit)= "getAllbytypeService(search.value)">
+        <a routerLink="/allProductsByType" routerLinkActive="active">
+        <input type="text" placeholder="Enter product type:" name="search">
+        <button type="submit" ><i class="fa fa-search"></i></button>
+        </a>
       </form>
-    </li>
-    <li style="float: right;"><a routerLink="/register" routerLinkActive="active">REGISTER</a></li>
+    </li> -->
+    <li style="float: right;"><a routerLink="/register" routerLinkActive="active">REGISTER   </a></li>
     <li style="float: right;"><a routerLink="/login" routerLinkActive="active">LOGIN</a></li>
 
     </ul>

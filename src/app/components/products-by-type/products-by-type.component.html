@@ -1,6 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <img src ="assets/newproductpage.jpg">
 
-<h2  style="text-align: center;"> PRODUCTS</h2>
+<form #getProductsByType="ngForm" (ngSubmit)= "onSubmit()" >
+
+    <input type="text"name="type" placeholder="Enter product type"  required #type="ngModel" [(ngModel)]="productsType">
+    &nbsp;
+    <button type="submit" ><i class="fa fa-search"></i></button>
+</form>
+
 
 <table border="3" class="productsTable" >
     <thead>
