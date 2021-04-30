@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: -18px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #12232E;
+}
+
+li {
+    float: left;
+}
+
+li a, form{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #12232E;
+}
+
+.active {
+    background-color: hotpink;
+}
+
+form{
+    text-align: right;
+}
+
+
+
+input[type=text]{
+
+	height: 20px;
+    width: 450px;
+}
+
+button{
+    height: 25px;
+
+}
