@@ -23,7 +23,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: hotpink;
+    background-color: #FAED26;
 }
 
 form{
@@ -35,10 +35,13 @@ form{
 input[type=text]{
 
 	height: 20px;
-    width: 450px;
+    width: 400px;
 }
 
 button{
-    height: 25px;
+    height: 28px;
+    width: 50px;
+    background-color: #FAED26;
+
 
 }

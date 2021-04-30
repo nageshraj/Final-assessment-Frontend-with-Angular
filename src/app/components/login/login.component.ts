@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Logindetails} from 'src/app/models/logindetails.model';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,19 @@ import {Logindetails} from 'src/app/models/logindetails.model';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _login: LoginService) { }
 
   public UserLogin={
     name:"",
     password:""
 
   }
+
+  userLoggedin:Logindetails = {
+    userName:this.UserLogin.name,
+    userPassword:this.UserLogin.password
+
+  };
 
   userDetails: Logindetails = {
     userName:this.UserLogin.name,
@@ -23,16 +30,15 @@ export class LoginComponent implements OnInit {
   };
 
   onSubmit(value){
-    console.log(value.name);
-    console.log(value.password);
+  
     this.userDetails.userName = value.name;
     this.userDetails.userPassword=value.password;
-    console.log(this.userDetails.userName);
+    console.log(this.userLoggedin.userName);
+    console.log(this.userLoggedin.userPassword);
 
-
-    //  this._register.registerUser(this.userDetails).subscribe(data => {
-    //    this.userDetails = data;
-    //  })
+     this._login.loginUser(this.userDetails).subscribe(data => {
+       this.userLoggedin = data;
+     })
   }
 
   ngOnInit(): void {

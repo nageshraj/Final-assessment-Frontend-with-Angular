@@ -10,6 +10,9 @@ import {Registrationdetails} from 'src/app/models/registrationdetails.model'
 })
 export class RegisterUserComponent implements OnInit {
 
+
+
+
   public UserRegister={
     name:"",
     email:"",

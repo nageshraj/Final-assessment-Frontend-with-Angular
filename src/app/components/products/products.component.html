@@ -1,0 +1,31 @@
+<img src ="assets/productpage.jpg">
+
+
+<table border="3" class="productsTable" >
+    <thead>
+        <tr>
+            <th>productName</th>
+            <th>productType</th>
+            <th>productPrice</th>
+            <th>productQuantity</th>
+            <th>productAvailability</th>
+            <th>productRating</th>
+
+            
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let product of allProducts ">
+            <td>{{product.productName}}</td>
+            <td>{{product.productType}}</td>
+            <td>{{product.productPrice}}</td>
+            <td>{{product.productQuantity}}</td>
+            <td>{{product.productAvailability}}</td>
+            <td>{{product.productRating}}</td>
+
+           
+
+        </tr>
+    </tbody>
+</table>
