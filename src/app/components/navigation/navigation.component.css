@@ -3,7 +3,7 @@ ul {
     margin: -18px;
     padding: 0;
     overflow: hidden;
-    background-color: #FB5D26;
+    background-color: #12232E;
 }
 
 li {
@@ -23,7 +23,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #24188A;
+    background-color: #FAED26;
 }
 
 
@@ -37,7 +37,7 @@ input[type=text]{
 button{
     height: 28px;
     width: 50px;
-    background-color: #24188A;
+    background-color: #FAED26;
 
 
 }
@@ -52,5 +52,6 @@ form > input[type=text]{
 }  
 
 img{
+
     height: 40px;
 }

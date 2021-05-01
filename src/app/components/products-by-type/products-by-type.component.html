@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<img src ="assets/newproductpage.jpg">
+<img src ="assets/productpage.jpg">
 
 <form #getProductsByType="ngForm" (ngSubmit)= "onSubmit()" >
 
@@ -12,7 +12,7 @@
 
 
 <table border="3" class="productsTable" >
-    <thead>
+    <thead *ngIf = "allProducts">
         <tr>
             <th>productName</th>
             <th>productType</th>

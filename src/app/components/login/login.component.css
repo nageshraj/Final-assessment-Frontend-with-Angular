@@ -4,17 +4,18 @@ form{
 
 
 input[type=submit]{
-	background-color: #24188A;
+	background-color: #FAED26;
 	border: 1px;
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding: 10px 10px;
 	margin: 10px 10px;
 	cursor: pointer;
+    border-radius: 8px;
 }
 
 input[type=text],input[type=password],input[type=date]{
-    border: 2px solid #24188A;
+    border: 2px solid #FAED26;
     border-radius: 4px;
     
 
@@ -26,7 +27,7 @@ margin: 3px 0;
 }
 
 div {
-    color: #24188A;
+    color: #FAED26;
 }
 
 img{

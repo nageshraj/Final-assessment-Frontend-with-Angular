@@ -12,7 +12,7 @@
 }
 
 .productsTable thead tr {
-    background-color: #FB5D26;
+    background-color: gray;
     color: #ffffff;
     text-align: left;
 }
@@ -28,7 +28,7 @@
 
 .productsTable thead th:nth-child(odd) {
     color: #ffffff;
-    background: #24188A;
+    background: #12232E;
 }
 
 .prodoductsTable tr:nth-child(even){background-color: #f2f2f2;}

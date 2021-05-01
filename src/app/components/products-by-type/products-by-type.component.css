@@ -11,7 +11,7 @@
 }
 
 .productsTable thead tr {
-    background-color: #24188A;
+    background-color: #12232E;
     color: #ffffff;
     text-align: left;
 }
@@ -27,7 +27,7 @@
 
 .productsTable thead th:nth-child(odd) {
     color: #ffffff;
-    background: #FB5D26;
+    background: gray;
 }
 
 .prodoductsTable tr:nth-child(even){background-color: #f2f2f2;}
@@ -52,7 +52,15 @@ input[type=text]{
 button{
     height: 36px;
     width: 60px;
-    background-color: #FB5D26;
+    background-color: #FAED26;
+    border: #FAED26;
 
+
+}
+
+input[type=text],input[type=password],input[type=date]{
+    border: 3px solid #FAED26;
+    border-radius: 4px;
+    
 
 }
