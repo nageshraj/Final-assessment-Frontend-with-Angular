@@ -4,13 +4,19 @@ import {RegisterUserComponent} from 'src/app/components/register-user/register-u
 import {LoginComponent} from 'src/app/components/login/login.component'
 import {ProductsComponent} from 'src/app/components/products/products.component'
 import {ProductsByTypeComponent} from 'src/app/components/products-by-type/products-by-type.component'
+import {EditProductByNameComponent} from 'src/app/components/edit-product-by-name/edit-product-by-name.component'
+import {DeleteProductComponent} from 'src/app/components/delete-product/delete-product.component'
 
 const routes: Routes = [
   { path: 'register', component: RegisterUserComponent },
   { path: 'login', component: LoginComponent },
   { path: 'allProducts', component: ProductsComponent },
   { path: 'allProductsByType', component: ProductsByTypeComponent },
+  { path: 'editProduct', component:EditProductByNameComponent },
+  { path: 'deleteProduct', component:DeleteProductComponent },
+
   { path: '**', redirectTo: '/register' }
+
 
 
 

@@ -42,14 +42,14 @@ img{
 } 
 
 
-input[type=text]{
+.getByName>input[type=text]{
 
 	height: 30px;
     width: 600px;
     margin-top: 100px;
 }
 
-button{
+button,input[type=submit]{
     height: 36px;
     width: 60px;
     background-color: #FAED26;
@@ -59,9 +59,16 @@ button{
 
 }
 
-input[type=text],input[type=password],input[type=date]{
+ input[type=text],input[type=password],input[type=date]{
     border: 3px solid #FAED26;
     border-radius: 4px;
     
 
 }
+
+.update>input[type=text]{
+    width: 400px;
+    height: 20px;
+}
+    
+

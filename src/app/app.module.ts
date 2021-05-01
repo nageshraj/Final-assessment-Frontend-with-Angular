@@ -15,6 +15,9 @@ import { RegisterUserComponent } from './components/register-user/register-user.
 import { LoginComponent } from './components/login/login.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductsByTypeComponent } from './components/products-by-type/products-by-type.component';
+import { EditProductByNameComponent } from './components/edit-product-by-name/edit-product-by-name.component';
+import { DeleteProductComponent } from './components/delete-product/delete-product.component';
+import { UpdateComponent } from './components/update/update.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ProductsByTypeComponent } from './components/products-by-type/products-
     RegisterUserComponent,
     LoginComponent,
     ProductsComponent,
-    ProductsByTypeComponent
+    ProductsByTypeComponent,
+    EditProductByNameComponent,
+    DeleteProductComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

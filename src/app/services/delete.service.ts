@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ProductsByType } from 'src/app/models/products-by-type.model';
+import { Delete } from 'src/app/models/delete.model';
 import { Observable } from 'rxjs';
 
 const headers= new HttpHeaders()
@@ -10,7 +10,7 @@ const headers= new HttpHeaders()
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsByTypeService {
+export class DeleteService {
 
   private url: string;
 
@@ -18,9 +18,8 @@ export class ProductsByTypeService {
   constructor(private http: HttpClient) { 
   }
 
-  public getAllByType(productsType:string): Observable<ProductsByType[]> {
-        this.url ='http://localhost:8080/getAllProductsByType/';
+  public deleteByName(productsName:string): Observable<Delete> {
+    this.url ='http://localhost:8080//deleteByName/'+productsName;
 
-    return this.http.get<ProductsByType[]>(this.url,{headers});
-  }
-}
+    return this.http.delete<Delete>(this.url,{headers});
+  }}

@@ -39,6 +39,8 @@ export class LoginComponent implements OnInit {
      this._login.loginUser(this.userDetails).subscribe(data => {
        this.userLoggedin = data;
      })
+
+     
   }
 
   ngOnInit(): void {

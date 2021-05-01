@@ -12,6 +12,8 @@ export class ProductsComponent implements OnInit {
 
   allProducts: Products[];
 
+  
+
   ngOnInit(): void {
     this._product.getAll().subscribe(data => {
       this.allProducts = data;

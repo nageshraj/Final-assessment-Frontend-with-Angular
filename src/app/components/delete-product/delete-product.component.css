@@ -59,7 +59,7 @@ button{
 
 }
 
-input[type=text],input[type=password],input[type=date]{
+ input[type=text],input[type=password],input[type=date]{
     border: 3px solid #FAED26;
     border-radius: 4px;
     
