@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<img src ="assets/book.jpeg">
 
 <form class="getByName" #getProductsByName="ngForm" (ngSubmit)= "onSubmit()" >
 
@@ -38,21 +39,21 @@
 </table>
 <br><br><br><br><br><br><br><br>
 
-<form class="update" #edit="ngForm" (ngSubmit)= "onSubmitUpdate()">
-    PRODUCT NAME: <input type="text" size="50" name="name" placeholder="{{product.productName}}" #name="ngModel" [(ngModel)]="product.productName">
+<form *ngIf = "product.productName!=null"  class="update" #edit="ngForm" (ngSubmit)= "onSubmitUpdate()">
+    PRODUCT NAME: <input type="text" size="60" name="name" placeholder="{{product.productName}}" #name="ngModel" [(ngModel)]="product.productName">
     <br>
-    PRODUCT TYPE: <input type="text" size="70" name="type" placeholder="{{product.productType}}" #type="ngModel" [(ngModel)]="product.productType">
+    PRODUCT TYPE: <input type="text" size="61" name="type" placeholder="{{product.productType}}" #type="ngModel" [(ngModel)]="product.productType">
     <br>
-    PRODUCT PRICE: <input type="text" size="50" name="price" placeholder="{{product.productPrice}}" #price="ngModel" [(ngModel)]="product.productPrice">
+    PRODUCT PRICE: <input type="text" size="60" name="price" placeholder="{{product.productPrice}}" #price="ngModel" [(ngModel)]="product.productPrice">
     <br>
 
-    PRODUCT QUANTITY: <input type="text" size="50" name="quantity" placeholder="{{product.productQuantity}}" #quantity="ngModel" [(ngModel)]="product.productQuantity">
+    PRODUCT QUANTITY: <input type="text" size="54" name="quantity" placeholder="{{product.productQuantity}}" #quantity="ngModel" [(ngModel)]="product.productQuantity">
     
     <br>
     PRODUCT AVAILABILITY: <input type="text" size="50" name="availability" placeholder="{{product.productAvailability}}" #availability="ngModel" [(ngModel)]="product.productAvailability">
     
     <br>
-    PRODUCT RATING: <input type="text" size="50" name="rating" placeholder="{{product.productRating}}" #rating="ngModel" [(ngModel)]="product.productRating">
+    PRODUCT RATING: <input type="text" size="58" name="rating" placeholder="{{product.productRating}}" #rating="ngModel" [(ngModel)]="product.productRating">
     <br>
 <br>
 

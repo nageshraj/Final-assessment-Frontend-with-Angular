@@ -19,7 +19,7 @@ export class ProductsByTypeService {
   }
 
   public getAllByType(productsType:string): Observable<ProductsByType[]> {
-        this.url ='http://localhost:8080/getAllProductsByType/';
+        this.url ='http://localhost:8080/getAllProductsByType/'+productsType;
 
     return this.http.get<ProductsByType[]>(this.url,{headers});
   }

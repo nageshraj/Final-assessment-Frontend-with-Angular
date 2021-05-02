@@ -1,4 +1,6 @@
 <h2 appAppHighlight style="text-align: center;"> LOGIN</h2>
+<h2 *ngIf="status && userLoggedin.userName!=''" style="text-align: center;"> WELCOME {{userLoggedin.userName}}, LETS GET STARTED </h2>
+<h2 *ngIf="status && userLoggedin.userName==''" style="text-align: center;"> USERNAME/PASSWORD INCORRECT </h2>
 
 <img src ="assets/homepage.jpg">
 

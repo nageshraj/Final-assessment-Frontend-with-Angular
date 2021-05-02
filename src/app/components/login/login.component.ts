@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
   }
 
   userLoggedin:Logindetails = {
-    userName:this.UserLogin.name,
-    userPassword:this.UserLogin.password
+    userName:'',
+    userPassword:''
 
   };
 
@@ -29,8 +29,11 @@ export class LoginComponent implements OnInit {
 
   };
 
+  status=false;
+
   onSubmit(value){
   
+    this.status=true;
     this.userDetails.userName = value.name;
     this.userDetails.userPassword=value.password;
     console.log(this.userLoggedin.userName);
@@ -39,6 +42,11 @@ export class LoginComponent implements OnInit {
      this._login.loginUser(this.userDetails).subscribe(data => {
        this.userLoggedin = data;
      })
+
+     console.log(this.userLoggedin);
+
+     console.log(this.userLoggedin.userPassword);
+     console.log(this.userLoggedin.userName);
 
      
   }
