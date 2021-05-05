@@ -2,7 +2,7 @@ form{
     float: left;
 }
 
-input[type=submit]{
+input[type=submit],input[type=reset]{
 	background-color: #FAED26;
 	border: 1px;
 	text-decoration: none;

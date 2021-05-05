@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Registrationdetails} from 'src/app/models/registrationdetails.model'
   import { RegisterService } from 'src/app/services/register.service';
+  import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -55,9 +57,11 @@ export class RegisterUserComponent implements OnInit {
      this._register.registerUser(this.userDetails).subscribe(data => {
        this.userDetails = data;
      })
+     this.router.navigate(['/login']);
+
   }
 
-  constructor(private _register: RegisterService) { 
+  constructor(private _register: RegisterService,private router : Router) { 
 
   }
   ngOnInit(): void {

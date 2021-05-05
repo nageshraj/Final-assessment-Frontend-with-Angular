@@ -19,6 +19,7 @@ import { EditProductByNameComponent } from './components/edit-product-by-name/ed
 import { DeleteProductComponent } from './components/delete-product/delete-product.component';
 import { UpdateComponent } from './components/update/update.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { UpdateComponent } from './components/update/update.component';
     ProductsByTypeComponent,
     EditProductByNameComponent,
     DeleteProductComponent,
-    UpdateComponent
+    UpdateComponent,
+  
   ],
   imports: [
     BrowserModule,

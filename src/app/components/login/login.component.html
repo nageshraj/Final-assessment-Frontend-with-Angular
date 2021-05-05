@@ -1,13 +1,13 @@
-<h2 appAppHighlight style="text-align: center;"> LOGIN</h2>
-<h2 *ngIf="status && userLoggedin.userName!=''" style="text-align: center;"> WELCOME {{userLoggedin.userName}}, LETS GET STARTED </h2>
-<h2 *ngIf="status && userLoggedin.userName==''" style="text-align: center;"> USERNAME/PASSWORD INCORRECT </h2>
+<h2 *ngIf="!status" style="text-align: center;"> LOGIN</h2>
+<!-- <h4 *ngIf="status " style="text-align: center;"> WELCOME {{userLoggedin.userName}}, LETS GET STARTED </h4> -->
+<h2 *ngIf="status" style="text-align: center;"> {{loginErrorMessage}} </h2>
 
 <img src ="assets/homepage.jpg">
 
 
-<form #login="ngForm" (ngSubmit)= "onSubmit(login.value)">
+<form #login="ngForm" (ngSubmit)= "onSubmit()">
 <label>ENTER USERNAME: </label>
-<input type="text"name="name" minlength="6" size="40" maxlength="20" pattern="[a-zA-Z ]*" required #name="ngModel" [(ngModel)]="UserLogin.name">
+<input type="text"name="name" minlength="6" size="40" maxlength="20" pattern="[a-zA-Z ]*" required #name="ngModel" [(ngModel)]="userLoginDetails.userName">
 <div *ngIf="name.errors && (name.dirty || name.touched)">
     <div [hidden]="!name.errors.required">
         Name is a required field.
@@ -26,7 +26,7 @@
 
 
 <label>ENTER PASSWORD: </label>
-<input type="password"name="password" size="40" minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,18}$" required #password="ngModel" [(ngModel)]="UserLogin.password">
+<input type="password"name="password" size="40" minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,18}$" required #password="ngModel" [(ngModel)]="userLoginDetails.userPassword">
 <div *ngIf="password.errors && (password.dirty || password.touched)">
     <div [hidden]="!password.errors.required">
         Password is a required field.
@@ -45,5 +45,6 @@
 
 
 <input type="submit" value="Login" [disabled]="!login.valid"  >
+<input type="reset" value="Reset">
 
 </form>

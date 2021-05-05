@@ -1,4 +1,4 @@
-export interface Logindetails {
-    userName:string,
-    userPassword:string,
+export class Logindetails {
+    userName:string;
+    userPassword:string;
 }
